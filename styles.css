@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom css */
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #0b7691;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 200px;
+}
+.head-left {
+  text-align: left;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.head-left h1 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.head-left h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 40px;
+  line-height: 1.2;
+}
+.head-right {
+  text-align: right;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.name {
+}
+.address {
+}
+.contact {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.email {
+  text-decoration: none !important;
+  color: #fff;
+}
+.header img {
+  border-radius: 5px;
+  width: 210px;
+  height: auto;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto 10px auto;
+  padding: 20px;
+  text-align: center;
+}
+.container p {
+  color: #0b7691;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.highlight {
+  font-weight: bold;
+  margin: 24px 0;
+  line-height: 1.2;
+}
+.contact-text {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+.contact-email {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+.container .note {
+  margin-top: 40px;
+  font-size: 12px;
+}
+.stats {
+  background: linear-gradient(
+      rgba(234, 234, 234, 0.5),
+      rgba(234, 234, 234, 0.5)
+    ),
+    url('./background-img.png');
+  background-color: #b4b4b4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px 12px;
+}
+.stats p {
+  margin: 28px 0;
+  color: #000;
+}
+.bank-note {
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .head-left {
+    text-align: center;
+    width: 100%;
+    padding: 24px;
+  }
+  .head-left h1 {
+    font-size: 22px;
+  }
+  .head-left h2 {
+  }
+  .head-right {
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .stats {
+    width: 100%;
+    padding: 20px;
+  }
+}
