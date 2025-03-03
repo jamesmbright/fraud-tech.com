@@ -4,83 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fraud-Tech</title>
-    <style>
-      body {
-        font-family: 'Times New Roman', serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-      }
-      .header {
-        background-color: #2c3e50;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      .header img {
-        border-radius: 5px;
-        width: 120px;
-        height: auto;
-      }
-      .container {
-        max-width: 900px;
-        margin: 20px auto;
-        background: white;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-      }
-      h1,
-      h2 {
-        color: #2c3e50;
-      }
-      .highlight {
-        font-weight: bold;
-        color: #e74c3c;
-      }
-      .contact {
-        font-size: 18px;
-        font-weight: bold;
-        color: #2c3e50;
-        margin-top: 20px;
-      }
-      .stats {
-        background: url('background-image.jpg') no-repeat center center/cover;
-        padding: 40px;
-        color: black;
-        font-size: 20px;
-        text-align: center;
-      }
-      .stats p {
-        font-weight: bold;
-      }
-      @media (max-width: 600px) {
-        .container,
-        .header {
-          padding: 15px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="header">
-      <h1>COMPLETE TRANSACTION CONTROL®</h1>
-      <h2>
-        A Patented Business Method for Stopping Credit Card Fraud and Illegal
-        Transactions
-      </h2>
-      <img src="ceo-photo.jpg" alt="James M. Bright" />
-      <p>James M. Bright, Charlotte, NC</p>
-      <p>704.242.4064 (M)</p>
-      <p>
-        Email:
-        <a href="mailto:James.Bright@Fraud-Tech.com" style="color: white"
-          >James.Bright@Fraud-Tech.com</a
-        >
-      </p>
-      <p>CEO / Inventor</p>
+      <div class="head-left">
+        <h1>COMPLETE TRANSACTION CONTROL®</h1>
+        <h2>
+          A Patented Business Method for Stopping Credit Card Fraud and Illegal
+          Transactions
+        </h2>
+      </div>
+      <img src="./user-avatar.png" alt="User" srcset="" />
+
+      <div class="head-right">
+        <div>
+          <p class="name">James M. Bright</p>
+          <p class="address">Charlotte, NC</p>
+        </div>
+
+        <p class="contact">704.242.4064 (M)</p>
+
+        <div>
+          <p>
+            <a href="mailto:James.Bright@Fraud-Tech.com" class="email"
+              >James.Bright@Fraud-Tech.com</a
+            >
+          </p>
+          <p>CEO / Inventor</p>
+        </div>
+      </div>
     </div>
+
     <div class="container">
       <p>
         Fraud-Tech is actively seeking a banking partner to deliver a patented
@@ -91,18 +46,25 @@
         If my solution can stop even 10% of illegal transactions, would that be
         worth a discussion? This can save your bank 100’s of millions annually!
       </p>
-      <p class="contact">
+      <p class="contact-text">
         Contact to hear more and schedule a brief introduction and demo!
       </p>
       <p>
-        Email:
-        <a href="mailto:James.Bright@Fraud-Tech.com"
+        <a href="mailto:James.Bright@Fraud-Tech.com" class="contact-email"
           >James.Bright@Fraud-Tech.com</a
         >
       </p>
+      <p class="note">
+        US PATENT # 63/152XXX, LICENSE FOR FOREIGN FILING, (Title 35, U.S. Code,
+        Section 184 and Title 37, Code of Federal Regulations, 5, 11 & 5.15)
+      </p>
     </div>
+
     <div class="stats">
-      <p>46% of global credit card fraud happens in the US.</p>
+      <p>
+        <span class="highlight">46%</span> of global credit card fraud happens
+        in the US.
+      </p>
       <p>
         Credit card fraud worldwide will reach
         <span class="highlight">$43 billion by 2026.</span>
@@ -110,24 +72,26 @@
       <p>
         US credit card fraud losses will eclipse
         <span class="highlight">$12.5 billion by 2026.</span>
+
+        <br />
+
+        <span class="bank-note">
+          (Bank of America spent over $600M alone in 2024 combating credit
+          fraud)
+        </span>
+      </p>
+
+      <p>
+        <span class="highlight">48% of consumers</span> say it’s the merchant’s
+        responsibility to protect them from fraud.
       </p>
       <p>
-        <em
-          >(Bank of America spent over $600M alone in 2024 combating credit
-          fraud)</em
-        >
-      </p>
-      <p>
-        48% of consumers say it’s the merchant’s responsibility to protect them
-        from fraud.
-      </p>
-      <p>
-        55% of fraudulent credit and debit card transactions are less than $100.
+        <span class="highlight">55%</span> of fraudulent credit and debit card
+        transactions are less than $100.
       </p>
       <p class="highlight">
         Every 14 seconds an illegal / fraudulent transaction occurs.
-      </p>
-      <p class="highlight">
+        <br />
         Every 3 seconds.. An illegal transaction is attempted.
       </p>
     </div>
